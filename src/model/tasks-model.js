@@ -33,6 +33,3 @@ const Tasks = sequelize.define(
 
 module.exports = Tasks;
 
-
-
-module.exports = Tasks;
