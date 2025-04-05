@@ -28,3 +28,8 @@ DEV_PORT='porta usada para desenvolvimento'
 
 # Inicie o servidor
 npm run server
+```
+
+📦 Deploy  
+O backend está em produção na Render e configurado para responder às requisições do frontend hospedado na Vercel.
+(depois de uma requisição, o render demora mais ou menos 50s para subir o servidor)
