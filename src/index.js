@@ -8,15 +8,15 @@ const sequelize = require("./db/database");
 (async () => {
   try {
     await sequelize.sync({ force: false });
-    console.log("📌 Banco de dados sincronizado!");
+    console.log("Banco de dados sincronizado!");
   } catch (error) {
-    console.error("❌ Erro ao sincronizar banco de dados:", error);
+    console.error("Erro ao sincronizar banco de dados:", error);
   }
 })();
 
 const app = express();
 
-const PORT = process.env.PORT || 8080;
+const PORT = process.env.PORT || process.env.DEV_PORT;
 app.listen(PORT, () => {
   console.log("Servidor de Pé");
 });
